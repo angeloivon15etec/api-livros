@@ -1,5 +1,3 @@
-[Read.md](https://github.com/user-attachments/files/31757982/Read.md)
-
 # API da Loja — Turma 3F
 
 API REST desenvolvida em **Python**, utilizando **FastAPI**, **SQLAlchemy**, **PyMySQL** e **MySQL/MariaDB**. O projeto foi produzido nas aulas do 3º bimestre de Sistemas Web II e implementa operações CRUD para dois recursos: **produtos** e **professores**.

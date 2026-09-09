@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 02/09/2026 às 22:53
+-- Tempo de geração: 09/09/2026 às 22:04
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -20,8 +20,50 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `biblioteca_db`
 --
-CREATE DATABASE IF NOT EXISTS `biblioteca_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `biblioteca_db`;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `livros`
+--
+
+CREATE TABLE `livros` (
+  `id` int(11) NOT NULL,
+  `titulo` varchar(150) NOT NULL,
+  `autor` varchar(120) NOT NULL,
+  `ano_publicacao` int(11) NOT NULL,
+  `disponivel` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Despejando dados para a tabela `livros`
+--
+
+INSERT INTO `livros` (`id`, `titulo`, `autor`, `ano_publicacao`, `disponivel`) VALUES
+(1, 'coraline', 'niel gayman', 2002, 1),
+(2, 'alice no pais das maravilhas', 'leqis caroll', 1865, 1),
+(3, 'o sete ', 'andre vaino', 1949, 1);
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices de tabela `livros`
+--
+ALTER TABLE `livros`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `ix_livros_id` (`id`);
+
+--
+-- AUTO_INCREMENT para tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `livros`
+--
+ALTER TABLE `livros`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

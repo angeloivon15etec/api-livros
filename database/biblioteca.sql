@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09/09/2026 às 22:04
+-- Tempo de geração: 18/09/2026 às 19:09
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -40,8 +40,7 @@ CREATE TABLE `livros` (
 --
 
 INSERT INTO `livros` (`id`, `titulo`, `autor`, `ano_publicacao`, `disponivel`) VALUES
-(1, 'coraline', 'niel gayman', 2002, 1),
-(2, 'alice no pais das maravilhas', 'leqis caroll', 1865, 1),
+(2, 'listitas', 'listosos', 2001, 0),
 (3, 'o sete ', 'andre vaino', 1949, 1);
 
 --
